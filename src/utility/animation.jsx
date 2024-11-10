@@ -3,10 +3,12 @@ export const FadeUp = (delay) => {
     hidden: {
       opacity: 0,
       y: 100,
+      x: -20
     },
     visible: {
       opacity: 1,
       y: 0,
+      x:20,
       transition: {
         duration: 1,
         delay: delay,

@@ -11,6 +11,8 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         averia: ["Averia Serif Libre", "serif"],
+        sour : ["Sour Gummy", "sans-serif"],
+        primary : ["Edu AU VIC WA NT Pre", "cursive"]
       },
 
       container: {
