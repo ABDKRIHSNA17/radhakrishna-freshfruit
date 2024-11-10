@@ -17,7 +17,7 @@ const Banner = () => {
             className="w-[300px] md:max-w-[400px] h-full object-cover drop-shadow-md"
           />
         </div>
-        <div className="font-averia flex flex-col justify-center">
+        <div className=" flex flex-col justify-center">
           <div className="text-center md:text-left space-y-4 lg:max-w-[400px]">
             <motion.h1
               variants={FadeUp(0.5)}
@@ -30,7 +30,7 @@ const Banner = () => {
               <span className="font-extrabold uppercase text-yellow-800 mx-1 mr-1">
                 RadhaKrishna
               </span>
-              furit store ?
+               ?
             </motion.h1>
             <motion.p
               variants={FadeUp(0.7)}
@@ -42,9 +42,10 @@ const Banner = () => {
               <span className="font-semibold  mb-2 text-cyan-950 mr-1">
                 Crafted with Love and Care:
               </span>
-              Every product we offer is chosen with your needs in mind. We blend
+              <span className="font-primary">Every product we offer is chosen with your needs in mind. We blend
               quality with style, ensuring that each item adds value to your
-              day.
+              day.</span>
+              
             </motion.p>
             <motion.p
               variants={FadeUp(0.9)}
@@ -56,9 +57,9 @@ const Banner = () => {
               <span className="font-semibold  mb-2 text-cyan-950 mr-1">
                 Memorable Experience:
               </span>
-              Our promise is simple – once you try RadhaKrishnabrand, it will
+              <span className="font-primary">Our promise is simple – once you try RadhaKrishnabrand, it will
               become an essential part of your routine, from the first light of
-              morning to the last moments of your day.
+              morning to the last moments of your day.</span>
             </motion.p>
             <motion.p
               variants={FadeUp(1.1)}
@@ -70,9 +71,11 @@ const Banner = () => {
               <span className="font-semibold  mb-2 text-cyan-950 mr-1">
                 Expanding Offerings Just for You:
               </span>
+              <span className="font-primary">
               RadhaKrishnabrand is always evolving, introducing new items that
               cater to your lifestyle. We’re committed to bringing you only the
               best.
+              </span>
             </motion.p>
             <motion.div
               variants={FadeLeft(1.5)}

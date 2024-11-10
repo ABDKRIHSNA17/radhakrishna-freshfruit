@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const Banner2 = () => {
   return (
     <section className="container mb-12">
-      <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14 ">
+      <div className="container grid grid-cols-1 md:grid-cols-1 space-y-6 md:space-y-0 py-14 ">
         <div className="font-averia flex flex-col justify-center">
-          <div className="text-center md:text-left space-y-4 lg:max-w-[400px]">
+          <div className="text-center md:text-left space-y-4 lg:max-w-[400px] overflow-x-visible overscroll-x-contain">
             <motion.h1
               variants={FadeUp(0.5)}
               initial="hidden"
@@ -30,9 +30,9 @@ const Banner2 = () => {
               <span className="font-semibold mb-2 text-cyan-950 mr-1">
                 Unmatched Quality, Unforgettable Style:
               </span>
-              We handpick each product to reflect the perfect blend of
+              <span className="font-primary">We handpick each product to reflect the perfect blend of
               craftsmanship and style, making your daily choices as unique as
-              you are.
+              you are.</span>
             </motion.p>
             <motion.p
               variants={FadeUp(0.9)}
@@ -44,9 +44,11 @@ const Banner2 = () => {
               <span className="font-semibold mb-2 text-cyan-950 mr-1">
                 Elevating Your Everyday:
               </span>
+              <span className="font-primary">
               RadhaKrishnabrand isn’t just a product—it’s a daily companion, a
               small reminder to live with intention and joy. Discover the little
               things that make a big difference.
+              </span>
             </motion.p>
             <motion.p
               variants={FadeUp(1.1)}
@@ -58,15 +60,17 @@ const Banner2 = () => {
               <span className="font-semibold mb-2 text-cyan-950 mr-1">
                 Evolving for You:
               </span>
+              <span className="font-primary">
               We’re constantly expanding, offering new items that align with
               your lifestyle. RadhaKrishnabrand is built on the idea of being a
               part of your journey, every step of the way.
+              </span>
             </motion.p>
             <motion.div
               variants={FadeLeft(1.5)}
               initial="hidden"
               animate="visible"
-              className="flex justify-center md:justify-start tracking-tighter mt-10"
+              className="flex justify-center  tracking-tighter mt-10"
             >
               <button className="primary-btn">Download App</button>
             </motion.div>
@@ -81,7 +85,7 @@ const Banner2 = () => {
             viewport={{ once: true }}
             src={BannerImg}
             alt=""
-            className="w-[480px] md:max-w-[650px] h-full object-cover drop-shadow"
+            className="w-[490px] md:max-w-[650px] h-full object-cover drop-shadow"
           />
         </div>
       </div>
